@@ -1,3 +1,7 @@
 <?php
+define('APP_PATH', __DIR__);
+require_once APP_PATH . '/vendor/autoload.php';
+use App\App;
 
-echo "Hello";
+$app = new App();
+$app->run();
